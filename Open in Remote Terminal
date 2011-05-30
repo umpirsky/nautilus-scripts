@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+# Opens current directory in remote terminal via SSH.
+# Copyright (C) Саша Стаменковић <umpirsky@gmail.com>
+
+import os
+from urlparse import urlparse
+
+# parse uri
+uri = urlparse(os.environ['NAUTILUS_SCRIPT_CURRENT_URI'])
+
+# ssh
+os.system('gnome-terminal --execute /usr/bin/ssh -t {} \' cd {} ; exec "$SHELL"\''.format(uri.netloc, uri.path))
