@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Opens current directory in remote terminal via SSH.
-# Copyright (C) Саша Стаменковић <umpirsky@gmail.com>
+# Copyright (C) Sasa Stamenkovic <umpirsky@gmail.com>
 
 import os
 from urlparse import urlparse
