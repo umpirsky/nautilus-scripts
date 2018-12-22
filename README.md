@@ -16,11 +16,6 @@
   <a href="https://github.com/umpirsky/Transliterator">transliterator</a>
 </p>
 
-Welcome to Umpirsky Nautilus Scripts
-====================================
+## Nautilus Scripts
 
-What is Nautilus, how to install scripts...?
---------------------------------------------
-
-Read on [help.ubuntu.com][1].
-[1]: https://help.ubuntu.com/community/NautilusScriptsHowto
+What is Nautilus, how to install scripts? Read on [help.ubuntu.com](https://help.ubuntu.com/community/NautilusScriptsHowto).

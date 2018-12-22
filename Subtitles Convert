@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Converts subtitles charset from Windows-1250 to utf-8.
+# Copyright (C) Sasa Stamenkovic <umpirsky@gmail.com>
+
+
+IFS_BAK=$IFS
+IFS="
+"
+
+for line in $NAUTILUS_SCRIPT_SELECTED_FILE_PATHS; do
+   iconv -f Windows-1250 -t utf-8//IGNORE $line > $line.tmp
+   mv $line.tmp $line
+done
+
+IFS=$IFS_BAK
